@@ -1,0 +1,23 @@
+.nav {
+    position: relative;
+}
+
+.nav:after {
+    content: "";
+    position: absolute;
+    --tw-text-opacity: 1;
+    background-color: rgb(126 34 206 / var(--tw-text-opacity));
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -3px;
+    transition: 0.3s;
+}
+
+.nav:hover {
+    color: #000;
+}
+
+.nav:hover:after {
+    width: 100%;
+}
