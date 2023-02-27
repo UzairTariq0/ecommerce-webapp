@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css';
 import Navbar from './Components/Navbar/Navbar'
+import Footer from './Components/Footer/Footer'
 import Home from "./Components/Home";
 import Cart from "./Components/Cart";
 import Product from "./Components/Product";
@@ -23,6 +24,7 @@ function App() {
             <Route exact path='/contact' element={<Contact />} />
             <Route exact path='/details/:id' element={<DetailsPage />} />
           </Routes>
+          <Footer/>
         </Provider>
       </BrowserRouter>
     </div>

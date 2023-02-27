@@ -7,6 +7,8 @@ import { Link } from 'react-router-dom'
 
 import Hero from './Hero/Hero'
 
+import { BsArrowRightShort } from 'react-icons/bs';
+
 import banner from '../assets/banner.png'
 import banner2 from '../assets/banner2.png'
 import banner3 from '../assets/banner3.png'
@@ -129,6 +131,27 @@ const Home = () => {
             })}
           </motion.div>
         </motion.div>
+
+        {/* Before Footer */}
+        <div className='mt-24 lg:mt-20 mb-20 bg-gradient-to-r from-slate-200 to-slate-100 py-5 '>
+        <div className='text-center font-semibold '>
+          <p className=' text-4xl lg:text-7xl'>One million clothes are</p>
+          <p className='text-4xl lg:text-6xl'>sold out each year</p>
+        </div>
+        <div className='text-center text-base lg:text-2xl mt-7'>
+          <p>We want to end this plastic waste, give you a healthier smile, and</p>
+          <p>build the world's most sustainable clothes company.</p>
+        </div>
+        <div className='text-center mt-6 '>
+          <Link className='flex justify-center' to='/product'>
+            <button className='underline font-semibold text-base lg:text-2xl'>
+              Shop now
+            </button>
+            <p className='relative left-[3px] top-[8px] text-2xl  '><BsArrowRightShort /></p>
+          </Link>
+        </div>
+        </div>
+
       </div>
     </>
   )

@@ -16,7 +16,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className='flex justify-between items-center px-12 p-4 bg-gray-100 shadow-lg '>
+    <nav className=' flex justify-between items-center px-12 p-4  shadow-lg '>
       <div className=' items-center hidden lg:inline'>
         <Link to="/">
           <motion.h1
@@ -24,7 +24,7 @@ const Navbar = () => {
             className='text-3xl font-bold
              '>
             E-
-            <span className='text-purple-700'>Store</span></motion.h1>
+            <span className='text-purple-800'>Store</span></motion.h1>
         </Link>
       </div>
 
@@ -37,7 +37,7 @@ const Navbar = () => {
             className='text-3xl font-bold
              '>
             E-
-            <span className='text-purple-700'>Store</span></motion.h1>
+            <span className='text-purple-800'>Store</span></motion.h1>
         </Link>
       </div>
 
@@ -76,7 +76,7 @@ const Navbar = () => {
         <RxHamburgerMenu onClick={handleMenu} size={26} />
       </motion.div>
 
-      <div className={menu ? 'bg-slate-50 absolute top-0 right-0 w-80 h-full z-10 duration-400' : 'fixed right-[100%]'}>
+      <div className={menu ? 'bg-white h-[100vh] absolute top-0 z-auto right-0 w-80 duration-700' : 'fixed  right-[100%]'}>
         <div className='flex justify-end pr-8 pt-8'>
           <TfiClose onClick={handleMenu} className='p-1 cursor-pointer' size={26} />
         </div>
