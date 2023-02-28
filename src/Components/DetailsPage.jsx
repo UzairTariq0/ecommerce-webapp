@@ -17,7 +17,12 @@ const DetailsPage = () => {
     <>
 
       {/* For Desktop */}
-      <div className='  mt-48 hidden lg:block mb-52 lg:mt-36 '>
+      <motion.div i
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.7 }}
+        className='  mt-48 hidden lg:block mb-52 lg:mt-36 
+      '>
         <div className='flex flex-col lg:flex-row'>
           <div>
             <img className=' bg-slate-200 rounded-lg ml-[105px] md:ml-80 lg:ml-64 p-6 w-[300px] lg:w-[850px] h-full' src={`/images/${product.image}`} alt="" />
@@ -46,10 +51,15 @@ const DetailsPage = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
 
       {/* For Mobile and Tablets  */}
-      <div className="container block lg:hidden mx-auto my-44">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.7 }}
+        className="container block lg:hidden mx-auto my-44"
+      >
         <div className="flex flex-wrap">
           <div className="w-full px-4 lg:w-1/2">
             <img src={`/images/${product.image}`} alt="Product Image" className="h-auto w-screen bg-slate-200 rounded-lg p-6 " />
@@ -76,7 +86,7 @@ const DetailsPage = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
 
       <div>
         <h1 className='font-semibold text-4xl text-center'>Related Products</h1>
