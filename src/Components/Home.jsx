@@ -111,7 +111,7 @@ const Home = () => {
               return (
                 <>
                   <motion.div className=' min-h-[30rem] min-w-[15rem] relative bottom-8 lg:bottom-0 px-[18px] py-[100px] lg:min-w-[20rem] lg:px-[25px] lg:py-[85px]' key={product.image}>
-                    <Link to={`/details/${product.id}`}> <img src={`/images/${product.image}`} className=' bg-slate-200 rounded-2xl border-2 border-black  p-8 w-full h-full' alt="pos" /></Link>
+                    <Link target={'_blank'} to={`/details/${product.id}`}> <img src={`/images/${product.image}`} className=' bg-slate-200 rounded-2xl border-2 border-black  p-8 w-full h-full' alt="pos" /></Link>
                     <p className='mt-2 text-xl '>{product.name}</p>
                     <div className='flex justify-between font-semibold mt-[6px]'>
                       <div>
