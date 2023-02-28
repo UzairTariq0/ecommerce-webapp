@@ -4,6 +4,7 @@ import { RxHamburgerMenu } from 'react-icons/rx'
 import { Link } from 'react-router-dom';
 
 import { BiCart } from 'react-icons/bi'
+import { BsInstagram, BsTwitter, BsFacebook } from 'react-icons/bs'
 import './navbar.css'
 import { motion } from 'framer-motion';
 
@@ -76,7 +77,7 @@ const Navbar = () => {
         <RxHamburgerMenu onClick={handleMenu} size={26} />
       </motion.div>
 
-      <div className={menu ? 'bg-slate-50 absolute top-0 right-0 w-80 h-full z-10 duration-700' : 'fixed right-[100%]'}>
+      <div className={menu ? 'bg-slate-50 shadow-slate-400 text-xl shadow-2xl absolute top-0 right-0 w-80 h-[748.5%] z-10 duration-700' : 'fixed right-[100%]'}>
         <div className='flex justify-end pr-8 pt-8'>
           <TfiClose onClick={handleMenu} className='p-1 cursor-pointer' size={26} />
         </div>
@@ -93,6 +94,17 @@ const Navbar = () => {
           <li className="py-3 pl-3 ">
             <Link to="/contact" className='nav'>Contact Us</Link>
           </li>
+          <div className='flex gap-6 mt-2'>
+          <li className="py-3 pl-3 ">
+            <Link target={'_blank'} to="https://www.facebook.com/"><BsFacebook size={30}/></Link>
+          </li>
+          <li className="py-3 pl-3 ">
+            <Link target={'_blank'} to="https://www.instagram.com/"><BsInstagram size={30}/></Link>
+          </li>
+          <li className="py-3 pl-3 ">
+            <Link target={'_blank'} to="https://twitter.com/"><BsTwitter size={30}/></Link>
+          </li>
+          </div>
         </ul>
       </div>
 
