@@ -39,7 +39,7 @@ const Home = () => {
           whileInView={{ y: 0 }}
           transition={{ delay: 0, duration: 1.2, type: 'spring', stiffness: 100 }}
         >
-          <div className='grid grid-cols-2  place-items-center lg:grid-cols-5 '>
+          <div className='grid grid-cols-2 place-items-center lg:grid-cols-5 '>
             {products.map(product => {
               return (
                 <div className='mt-10 w-[150px] sm:w-[220px] md:w-64' key={product.id} >
