@@ -23,7 +23,7 @@ const Hero = () => {
       </div>
 
       <div className=''>
-        <img className='p-1 h-[100%] lg:h-[90%] -mt-20 lg:mt-6 w-full' src={men} alt="" />
+        <img className='p-1 h-[100%] lg:h-[89%] -mt-20 lg:mt-6 w-full' src={men} alt="" />
       </div>
     </motion.div>
   )
