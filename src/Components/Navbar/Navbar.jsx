@@ -77,7 +77,7 @@ const Navbar = () => {
         <RxHamburgerMenu onClick={handleMenu} size={26} />
       </motion.div>
 
-      <div className={menu ? 'bg-slate-50 shadow-slate-400 text-xl shadow-2xl absolute top-0 right-0 w-80 h-[748.5%] z-10 duration-700' : 'fixed right-[100%]'}>
+      <motion.div className={menu ? 'bg-slate-50 shadow-slate-400 text-xl shadow-2xl absolute top-0 right-0 w-80 h-[748.5%] z-10 duration-700' : 'fixed right-[100%]'}>
         <div className='flex justify-end pr-8 pt-8'>
           <TfiClose onClick={handleMenu} className='p-1 cursor-pointer' size={26} />
         </div>
@@ -106,7 +106,7 @@ const Navbar = () => {
           </li>
           </div>
         </ul>
-      </div>
+      </motion.div>
 
     </nav>
   )
