@@ -39,10 +39,10 @@ const Home = () => {
           whileInView={{ y: 0 }}
           transition={{ delay: 0, duration: 1.2, type: 'spring', stiffness: 100 }}
         >
-          <div className='grid grid-cols-2 place-items-center sm:grid-cols-9 lg:grid-cols-5 '>
+          <div className='grid grid-cols-2  place-items-center lg:grid-cols-5 '>
             {products.map(product => {
               return (
-                <div className='mt-10 w-[220px] md:w-64' key={product.id} >
+                <div className='mt-10 w-[150px] sm:w-[220px] md:w-64' key={product.id} >
                   <div>
                     <div className='bg-slate-200 border-2 border-black rounded-lg p-6 '>
                       <Link target={'_blank'} to={`/details/${product.id}`}><motion.img whileHover={{ scale: 1.1 }} transition={{ duration: 0.24 }} src={`/images/${product.image}`} className='w-48 h-full' alt="pos" /></Link>
@@ -110,7 +110,7 @@ const Home = () => {
             {products.map(product => {
               return (
                 <>
-                  <motion.div className=' min-h-[30rem] min-w-[15rem] relative bottom-8 lg:bottom-0 px-[18px] py-[100px] lg:min-w-[20rem] lg:px-[25px] lg:py-[85px]' key={product.image}>
+                  <motion.div className='min-h-[30rem] min-w-[15rem] relative bottom-8 lg:bottom-0 px-[18px] py-[100px] lg:min-w-[20rem] lg:px-[25px] lg:py-[85px]' key={product.image}>
                     <Link target={'_blank'} to={`/details/${product.id}`}> <img src={`/images/${product.image}`}  className=' bg-slate-200 rounded-2xl border-2 border-black  p-8 w-full h-full' alt="pos" /></Link>
                     <p className='mt-2 text-xl '>{product.name}</p>
                     <div className='flex justify-between font-semibold mt-[6px]'>
