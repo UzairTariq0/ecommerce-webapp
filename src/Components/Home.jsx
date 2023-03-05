@@ -147,7 +147,7 @@ const Home = () => {
             <button className='underline font-semibold text-base lg:text-2xl'>
               Shop now
             </button>
-            <p className='relative left-[3px] top-[8px] text-2xl  '><BsArrowRightShort /></p>
+            <p className='relative left-[1px] lg:left-[3px] top-[4px] lg:top-[8px] text-xl lg:text-2xl '><BsArrowRightShort /></p>
           </Link>
         </div>
         </div>

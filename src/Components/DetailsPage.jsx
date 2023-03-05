@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useParams } from 'react-router-dom';
 import { AiOutlinePlus } from 'react-icons/ai';
@@ -58,7 +58,7 @@ const DetailsPage = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.7 }}
-        className="container block lg:hidden mx-auto my-44"
+        className="container block lg:hidden mx-auto my-[79px]"
       >
         <div className="flex flex-wrap">
           <div className="w-full px-4 lg:w-1/2">

@@ -10,7 +10,7 @@ const Hero = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 1, delay: 0.3 }}
       
-      className='flex flex-wrap justify-center gap-56 my-16 mx-3  lg:mx-10 bg-gray-100   
+      className='flex flex-wrap justify-center gap-56 my-12 rounded-lg lg:my-14 mx-3  lg:mx-10 bg-gray-100   
      '>
       <div className=' relative mt-36 lg:mt-40  '>
         <h2 className='font-extrabold text-5xl  lg:text-6xl text-center  lg:text-left'>Shirt's</h2>
