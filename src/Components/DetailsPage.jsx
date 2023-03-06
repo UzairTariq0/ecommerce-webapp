@@ -13,6 +13,12 @@ const DetailsPage = () => {
   useEffect(() => {
     dispatch({ type: 'PRODUCT', id })
   }, [id])
+  const [quantity, setQuantity] = useState(1)
+  const DecQuantity = () => {
+    if(quantity > 1){
+      setQuantity(quantity - 1)
+    }
+  }
   return (
     <>
 
@@ -43,9 +49,9 @@ const DetailsPage = () => {
                 </div>
               </div>
               <div className='flex  -ml-[200px] md:-ml-[60px]  lg:ml-[26px] mt-7'>
-                <span className=' w-[100px] lg:w-[60px] h-[60px] border-[1px] border-solid bg-slate-50 duration-200 hover:bg-slate-100 cursor-pointer flex justify-center items-center'><AiOutlineMinus className='' /></span>
-                <span className=' w-[100px] lg:w-[60px] h-[60px] border-[1px] border-solid cursor-pointer flex justify-center items-center'>1</span>
-                <span className=' w-[100px] lg:w-[60px] h-[60px] border-[1px] border-solid bg-slate-50 duration-200 hover:bg-slate-100 cursor-pointer flex justify-center items-center'><AiOutlinePlus className='' /></span>
+                <span className=' w-[100px] lg:w-[60px] h-[60px] border-[1px] border-solid bg-slate-50 duration-200 hover:bg-slate-100 cursor-pointer flex justify-center items-center' onClick={DecQuantity}><AiOutlineMinus /></span>
+                <span className=' w-[100px] lg:w-[60px] h-[60px] border-[1px] border-solid cursor-pointer flex justify-center items-center'>{quantity}</span>
+                <span className=' w-[100px] lg:w-[60px] h-[60px] border-[1px] border-solid bg-slate-50 duration-200 hover:bg-slate-100 cursor-pointer flex justify-center items-center'  onClick={() => setQuantity(quantity + 1)}><AiOutlinePlus /></span>
                 <button className='ml-[10px] w-80  bg-purple-700 duration-300 hover:bg-purple-600 text-white outline-none border-none'>Add to Cart</button>
               </div>
             </div>

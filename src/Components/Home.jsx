@@ -71,12 +71,12 @@ const Home = () => {
 
         {/* Product button */}
         <div className='mt-20'>
-          <Link className='flex' to='/product'>
+          <Link className='flex ' to='/product'>
             <motion.button
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.5 }}
-              className='bg-black font-semibold m-auto text-white px-12 py-4 text-md  rounded-full transition-all duration-1000   hover:bg-white hover:text-black hover:border-black hover:border-solid hover:border-2  '>
+              className='bg-black font-semibold m-auto text-white px-12 py-4 text-md  rounded-full transition-all duration-300   hover:bg-white hover:text-black hover:border-black hover:border-solid hover:border-2  '>
               See All Products
             </motion.button>
           </Link>
