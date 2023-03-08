@@ -89,7 +89,7 @@ const Navbar = () => {
             <Link to="/cart" className='nav'>Cart</Link>
           </li>
           <li className="py-3 pl-3 ">
-            <Link to="/products" className='nav'>Products</Link>
+            <Link to="/product" className='nav'>Products</Link>
           </li>
           <li className="py-3 pl-3 ">
             <Link to="/contact" className='nav'>Contact Us</Link>

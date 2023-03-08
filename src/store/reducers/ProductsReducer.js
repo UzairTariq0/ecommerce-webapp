@@ -14,6 +14,7 @@ const initState = {
     ],
     product: {}
 }
+
 const ProductsReducer = (state = initState, action) => {
     switch(action.type){
         case "PRODUCT": 
