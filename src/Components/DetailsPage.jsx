@@ -84,9 +84,9 @@ const DetailsPage = () => {
 
 
               <div className='flex '>
-                <span className='w-[60px] h-[60px] border-[1px] border-solid flex justify-center items-center bg-slate-50 hover:bg-slate-100 duration-200 cursor-pointer '><AiOutlineMinus /></span>
-                <span className='w-[60px] h-[60px] border-[1px] border-solid flex justify-center items-center duration-200 cursor-pointer '>1</span>
-                <span className='w-[60px] h-[60px] border-[1px] border-solid flex justify-center items-center bg-slate-50 hover:bg-slate-100 duration-200 cursor-pointer '><AiOutlinePlus /></span>
+                <span className='w-[60px] h-[60px] border-[1px] border-solid flex justify-center items-center bg-slate-50 hover:bg-slate-100 duration-200 cursor-pointer ' onClick={DecQuantity}><AiOutlineMinus /></span>
+                <span className='w-[60px] h-[60px] border-[1px] border-solid flex justify-center items-center duration-200 cursor-pointer '>{quantity}</span>
+                <span className='w-[60px] h-[60px] border-[1px] border-solid flex justify-center items-center bg-slate-50 hover:bg-slate-100 duration-200 cursor-pointer ' onClick={() => setQuantity(quantity + 1)}><AiOutlinePlus /></span>
               </div>
               <button className=" w-full duration-300 bg-purple-600 px-4 py-2 text-white hover:bg-purple-500 focus:bg-purple-500 focus:outline-none">Add to Cart</button>
             </div>

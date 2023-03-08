@@ -25,15 +25,15 @@ const Product = () => {
       <div className='mt-16'>
         <div className=' flex justify-center  '>
           <div >
-            <h1 className='  border-black  border-b-4  font-bold font-serif text-3xl lg:text-4xl'> New Arrivals </h1>
+            <h1 className=' border-black  border-b-4  font-bold font-serif text-3xl lg:text-4xl'> New Arrivals </h1>
           </div>
         </div>
         <div className='grid grid-cols-2 place-items-center lg:grid-cols-5 '>
           {products.map(product => {
             return (
-              <div className='mt-10 w-[180px] sm:w-[250px] md:w-64' key={product.id} >
+              <div className='mt-10 w-[150px] bg-slate-300 p-2 rounded-2xl sm:w-[220px] md:w-64' key={product.id} >
                 <div>
-                  <div className='bg-slate-200 border-2 border-black rounded-lg p-6 '>
+                  <div className='bg-slate-50 rounded-2xl p-6 '>
                     <Link target={'_blank'} to={`/details/${product.id}`}><motion.img whileHover={{ scale: 1.1 }} transition={{ duration: 0.24 }} src={`/images/${product.image}`} className='w-48 h-full' alt="pos" /></Link>
                   </div>
                   <div className='mt-[7px] '>
@@ -64,9 +64,9 @@ const Product = () => {
         <div className='grid grid-cols-2 place-items-center lg:grid-cols-5 '>
           {products.map(product => {
             return (
-              <div className='mt-10 w-[180px] sm:w-[250px] md:w-64' key={product.id} >
+              <div className='mt-10 w-[150px] bg-slate-300 p-2 rounded-2xl sm:w-[220px] md:w-64' key={product.id} >
                 <div>
-                  <div className='bg-slate-200 border-2 border-black rounded-lg p-6 '>
+                  <div className='bg-slate-50 rounded-2xl p-6 '>
                     <Link target={'_blank'} to={`/details/${product.id}`}><motion.img whileHover={{ scale: 1.1 }} transition={{ duration: 0.24 }} src={`/images/${product.image}`} className='w-48 h-full' alt="pos" /></Link>
                   </div>
                   <div className='mt-[7px] '>
@@ -92,9 +92,9 @@ const Product = () => {
         <div className='grid grid-cols-2 place-items-center lg:grid-cols-5 '>
           {products.map(product => {
             return (
-              <div className='mt-10 w-[180px] sm:w-[250px] md:w-64' key={product.id} >
+              <div className='mt-10 w-[150px] bg-slate-300 p-2 rounded-2xl sm:w-[220px] md:w-64' key={product.id} >
                 <div>
-                  <div className='bg-slate-200 border-2 border-black rounded-lg p-6 '>
+                  <div className='bg-slate-50 rounded-2xl p-6 '>
                     <Link target={'_blank'} to={`/details/${product.id}`}><motion.img whileHover={{ scale: 1.1 }} transition={{ duration: 0.24 }} src={`/images/${product.image}`} className='w-48 h-full' alt="pos" /></Link>
                   </div>
                   <div className='mt-[7px] '>
@@ -118,7 +118,8 @@ const Product = () => {
           })}
         </div>
         <div className='bg-slate-200 p-4 mt-16 flex flex-col'>
-          <h1 className='text-center text-5xl font-serif font-black'>Save more with coupons & up to 50% off!!</h1>
+          <h1 className='text-center text-5xl font-serif font-black'>Save more with coupons </h1>
+          <h1 className='text-center text-5xl font-serif font-black'>up to 50% off!!</h1>
           <Link className='m-auto' to="/product"><button className='bg-black text-white px-5 py-3 text-md mt-5 lg:mt-6 rounded-3xl    hover:bg-slate-100 hover:text-black hover:border-black hover:border-solid hover:border-2 '>Shop Now</button></Link>
         </div>
       </div>
