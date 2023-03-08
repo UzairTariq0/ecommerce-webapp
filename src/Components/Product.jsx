@@ -31,7 +31,7 @@ const Product = () => {
         <div className='grid grid-cols-2 place-items-center lg:grid-cols-5 '>
           {products.map(product => {
             return (
-              <div className='mt-10 w-[150px] sm:w-[220px] md:w-64' key={product.id} >
+              <div className='mt-10 w-[180px] sm:w-[250px] md:w-64' key={product.id} >
                 <div>
                   <div className='bg-slate-200 border-2 border-black rounded-lg p-6 '>
                     <Link target={'_blank'} to={`/details/${product.id}`}><motion.img whileHover={{ scale: 1.1 }} transition={{ duration: 0.24 }} src={`/images/${product.image}`} className='w-48 h-full' alt="pos" /></Link>
@@ -64,7 +64,7 @@ const Product = () => {
         <div className='grid grid-cols-2 place-items-center lg:grid-cols-5 '>
           {products.map(product => {
             return (
-              <div className='mt-10 w-[150px] sm:w-[220px] md:w-64' key={product.id} >
+              <div className='mt-10 w-[180px] sm:w-[250px] md:w-64' key={product.id} >
                 <div>
                   <div className='bg-slate-200 border-2 border-black rounded-lg p-6 '>
                     <Link target={'_blank'} to={`/details/${product.id}`}><motion.img whileHover={{ scale: 1.1 }} transition={{ duration: 0.24 }} src={`/images/${product.image}`} className='w-48 h-full' alt="pos" /></Link>
@@ -92,7 +92,7 @@ const Product = () => {
         <div className='grid grid-cols-2 place-items-center lg:grid-cols-5 '>
           {products.map(product => {
             return (
-              <div className='mt-10 w-[150px] sm:w-[220px] md:w-64' key={product.id} >
+              <div className='mt-10 w-[180px] sm:w-[250px] md:w-64' key={product.id} >
                 <div>
                   <div className='bg-slate-200 border-2 border-black rounded-lg p-6 '>
                     <Link target={'_blank'} to={`/details/${product.id}`}><motion.img whileHover={{ scale: 1.1 }} transition={{ duration: 0.24 }} src={`/images/${product.image}`} className='w-48 h-full' alt="pos" /></Link>
