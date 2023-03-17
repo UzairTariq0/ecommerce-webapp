@@ -34,7 +34,7 @@ const Product = () => {
               <div className='mt-10 w-[150px] bg-slate-300 p-2 rounded-2xl sm:w-[220px] md:w-64' key={product.id} >
                 <div>
                   <div className='bg-slate-50 rounded-2xl p-6 '>
-                    <Link target={'_blank'} to={`/details/${product.id}`}><motion.img whileHover={{ scale: 1.1 }} transition={{ duration: 0.24 }} src={`/images/${product.image}`} className='w-48 h-full' alt="pos" /></Link>
+                    <Link to={`/details/${product.id}`}><motion.img whileHover={{ scale: 1.1 }} transition={{ duration: 0.24 }} src={`/images/${product.image}`} className='w-48 h-full' alt="pos" /></Link>
                   </div>
                   <div className='mt-[7px] '>
                     {product.name}
@@ -67,7 +67,7 @@ const Product = () => {
               <div className='mt-10 w-[150px] bg-slate-300 p-2 rounded-2xl sm:w-[220px] md:w-64' key={product.id} >
                 <div>
                   <div className='bg-slate-50 rounded-2xl p-6 '>
-                    <Link target={'_blank'} to={`/details/${product.id}`}><motion.img whileHover={{ scale: 1.1 }} transition={{ duration: 0.24 }} src={`/images/${product.image}`} className='w-48 h-full' alt="pos" /></Link>
+                    <Link to={`/details/${product.id}`}><motion.img whileHover={{ scale: 1.1 }} transition={{ duration: 0.24 }} src={`/images/${product.image}`} className='w-48 h-full' alt="pos" /></Link>
                   </div>
                   <div className='mt-[7px] '>
                     {product.name}
@@ -95,7 +95,7 @@ const Product = () => {
               <div className='mt-10 w-[150px] bg-slate-300 p-2 rounded-2xl sm:w-[220px] md:w-64' key={product.id} >
                 <div>
                   <div className='bg-slate-50 rounded-2xl p-6 '>
-                    <Link target={'_blank'} to={`/details/${product.id}`}><motion.img whileHover={{ scale: 1.1 }} transition={{ duration: 0.24 }} src={`/images/${product.image}`} className='w-48 h-full' alt="pos" /></Link>
+                    <Link  to={`/details/${product.id}`}><motion.img whileHover={{ scale: 1.1 }} transition={{ duration: 0.24 }} src={`/images/${product.image}`} className='w-48 h-full' alt="pos" /></Link>
                   </div>
                   <div className='mt-[7px] '>
                     {product.name}

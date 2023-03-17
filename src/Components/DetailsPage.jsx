@@ -52,7 +52,7 @@ const DetailsPage = () => {
                 <span className=' w-[100px] lg:w-[60px] h-[60px] border-[1px] border-solid bg-slate-50 duration-200 hover:bg-slate-100 cursor-pointer flex justify-center items-center' onClick={DecQuantity}><AiOutlineMinus /></span>
                 <span className=' w-[100px] lg:w-[60px] h-[60px] border-[1px] border-solid cursor-pointer flex justify-center items-center'>{quantity}</span>
                 <span className=' w-[100px] lg:w-[60px] h-[60px] border-[1px] border-solid bg-slate-50 duration-200 hover:bg-slate-100 cursor-pointer flex justify-center items-center'  onClick={() => setQuantity(quantity + 1)}><AiOutlinePlus /></span>
-                <button className='ml-[10px] w-80  bg-purple-700 duration-300 hover:bg-purple-600 text-white outline-none border-none'>Add to Cart</button>
+                <button className='ml-[10px] w-80  bg-purple-700 duration-300 hover:bg-purple-600 text-white outline-none border-none' onClick={() => dispatch({type: 'ADD_TO_CART', payload: {product, quantity}})}>Add to Cart</button>
               </div>
             </div>
           </div>
@@ -88,7 +88,7 @@ const DetailsPage = () => {
                 <span className='w-[60px] h-[60px] border-[1px] border-solid flex justify-center items-center duration-200 cursor-pointer '>{quantity}</span>
                 <span className='w-[60px] h-[60px] border-[1px] border-solid flex justify-center items-center bg-slate-50 hover:bg-slate-100 duration-200 cursor-pointer ' onClick={() => setQuantity(quantity + 1)}><AiOutlinePlus /></span>
               </div>
-              <button className=" w-full duration-300 bg-purple-600 px-4 py-2 text-white hover:bg-purple-500 focus:bg-purple-500 focus:outline-none">Add to Cart</button>
+              <button className=" w-full duration-300 bg-purple-600 px-4 py-2 text-white hover:bg-purple-500 focus:bg-purple-500 focus:outline-none" onClick={() => dispatch({type: 'ADD_TO_CART', payload: {product, quantity}})} >Add to Cart</button>
             </div>
           </div>
         </div>
@@ -105,7 +105,7 @@ const DetailsPage = () => {
                 <div className='mt-10 w-[150px] sm:w-[220px] md:w-64' key={product.id} >
                   <div>
                     <div className='bg-slate-200 border-2 border-black rounded-lg p-6 '>
-                      <Link target={'_blank'} to={`/details/${product.id}`}><motion.img whileHover={{ scale: 1.1 }} transition={{ duration: 0.24 }} src={`/images/${product.image}`} className='w-48 h-full' alt="pos" /></Link>
+                      <Link to={`/details/${product.id}`}><motion.img whileHover={{ scale: 1.1 }} transition={{ duration: 0.24 }} src={`/images/${product.image}`} className='w-48 h-full' alt="pos" /></Link>
                     </div>
                     <div className='mt-[7px] '>
                       {product.name}

@@ -2,14 +2,16 @@ import React, { useState } from 'react'
 import { TfiClose } from 'react-icons/tfi'
 import { RxHamburgerMenu } from 'react-icons/rx'
 import { Link } from 'react-router-dom';
-
 import { BiCart } from 'react-icons/bi'
 import { BsInstagram, BsTwitter, BsFacebook } from 'react-icons/bs'
 import './navbar.css'
 import { motion } from 'framer-motion';
+import { useSelector } from 'react-redux';
 
 
 const Navbar = () => {
+  const {totalQuantities} = useSelector(state => state.CartReducer)
+
   const [menu, setMenu] = useState(false)
 
   const handleMenu = () => {
@@ -60,7 +62,7 @@ const Navbar = () => {
       '>
           <Link to="/cart">
             <BiCart size={26} />
-            <span className='block absolute text-center -right-3 px-[0.46rem] -top-[13px]  bg-purple-600 rounded-[50%] text-white '>0</span>
+            <span className='block absolute text-center -right-3 px-[0.46rem] -top-[13px]  bg-purple-600 rounded-[50%] text-white '>{totalQuantities}</span>
           </Link>
         </motion.ul>
       </div>
@@ -73,7 +75,7 @@ const Navbar = () => {
         <Link to="/cart">
           <BiCart size={24} />
         </Link>
-        <span className='block absolute text-center right-[76px] px-[0.42rem] top-[6.9px]  bg-purple-600 rounded-[50%] text-white'>0</span>
+        <span className='block absolute text-center right-[76px] px-[0.42rem] top-[6.9px]  bg-purple-600 rounded-[50%] text-white'>{totalQuantities}</span>
         <RxHamburgerMenu onClick={handleMenu} size={26} />
       </motion.div>
 
