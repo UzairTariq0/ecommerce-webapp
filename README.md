@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Ecommerce Website Using ReactJS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An Ecommerce website showing products and product-details.
 
 ## Available Scripts
 
