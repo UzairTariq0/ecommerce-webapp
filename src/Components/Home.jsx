@@ -32,18 +32,18 @@ const Home = () => {
       {/* Products Section */}
       <div>
         <div>
-          <h2 className='text-center mt-24 text-4xl font-bold '>Latest Products</h2>
+          <h2 className='text-center mt-24 text-4xl font-nunito  font-bold  '>Latest Products</h2>
         </div>
         <motion.div
           initial={{ y: 150 }}
           whileInView={{ y: 0 }}
           transition={{ delay: 0, duration: 1.2, type: 'spring', stiffness: 100 }}
         >
-          <div className='grid grid-cols-2 place-items-center lg:grid-cols-5 '>
+          <div className='grid grid-cols-2 place-items-center lg:grid-cols-5  ' >
             {products.map(product => {
               return (
-                <div className='mt-10 w-[150px] sm:w-[220px] md:w-64' key={product.id} >
-                  <div>
+                <div className='mt-10 w-[150px] sm:w-[220px] md:w-64' key={product.id}   >
+                  <div >
                     <div className='bg-slate-200 border-2 border-black rounded-lg p-6 '>
                       <Link to={`/details/${product.id}`}><motion.img whileHover={{ scale: 1.1 }} transition={{ duration: 0.24 }} src={`/images/${product.image}`} className='w-48 h-full' alt="pos" /></Link>
                     </div>
@@ -70,7 +70,7 @@ const Home = () => {
         </motion.div>
 
         {/* Product button */}
-        <div className='mt-20'>
+        <div className='mt-20 font-nunito'>
           <Link className='flex ' to='/product'>
             <motion.button
               initial={{ opacity: 0 }}
@@ -98,7 +98,7 @@ const Home = () => {
         <motion.h1
           initial={{ opacity: 0 }}
           transition={{ delay: 0, duration: 0.5 }}
-          whileInView={{ opacity: 1 }} className='text-center mt-24 font-bold text-4xl'>Most Popular</motion.h1>
+          whileInView={{ opacity: 1 }} className='text-center mt-24 font-nunito  font-bold text-4xl'>Most Popular</motion.h1>
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -110,7 +110,7 @@ const Home = () => {
             {products.map(product => {
               return (
                 <>
-                  <motion.div className='min-h-[30rem] min-w-[15rem] relative bottom-8 lg:bottom-0 px-[18px] py-[100px] lg:min-w-[20rem] lg:px-[25px] lg:py-[85px]' key={product.image}>
+                  <motion.div className='min-h-[30rem] min-w-[15rem] relative bottom-8 lg:bottom-0 px-[18px] py-[100px] lg:min-w-[20rem] lg:px-[25px] lg:py-[85px]' key={product.id}>
                     <Link to={`/details/${product.id}`}> <img src={`/images/${product.image}`}  className=' bg-slate-200 rounded-2xl border-2 border-black  p-8 w-full h-full' alt="pos" /></Link>
                     <p className='mt-2 text-xl '>{product.name}</p>
                     <div className='flex justify-between font-semibold mt-[6px]'>
@@ -133,7 +133,7 @@ const Home = () => {
         </motion.div>
 
         {/* Before Footer */}
-        <div className='mt-24 lg:mt-20 mb-20 bg-gradient-to-r from-slate-200 to-slate-100 py-5 '>
+        <div className='mt-24 lg:mt-20 mb-20 font-nunito bg-gradient-to-r from-slate-200 to-slate-100 py-5 '>
         <div className='text-center font-semibold '>
           <p className=' text-4xl lg:text-7xl'>One million clothes are</p>
           <p className='text-4xl lg:text-6xl'>sold out each year</p>

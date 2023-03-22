@@ -5,7 +5,11 @@ module.exports = {
   ],
   darkMode: "class",
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        nunito: ['Nunito Sans']
+      }
+    },
   },
   plugins: [],
 }

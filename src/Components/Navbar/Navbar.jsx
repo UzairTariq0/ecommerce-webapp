@@ -19,12 +19,12 @@ const Navbar = () => {
   }
 
   return (
-    <nav className=' flex justify-between items-center px-12 p-4 bg-gray-100 shadow-lg '>
+    <nav className=' flex justify-between items-center px-12 p-4 bg-gray-100 shadow-lg  '>
       <div className=' items-center hidden lg:inline'>
         <Link to="/">
           <motion.h1
             initial={{ y: -250 }} animate={{ y: 0 }} transition={{ type: 'spring', bounce: 0.25 }}
-            className='text-3xl font-bold
+            className='text-3xl font-extrabold font-nunito
              '>
             E-
             <span className='text-purple-800'>Store</span></motion.h1>
@@ -37,14 +37,14 @@ const Navbar = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            className='text-3xl font-bold
+            className='text-3xl font-extrabold font-nunito
              '>
             E-
             <span className='text-purple-800'>Store</span></motion.h1>
         </Link>
       </div>
 
-      <div className='hidden lg:inline'>
+      <div className='hidden lg:inline font-nunito'>
         <motion.ul initial={{ y: -250 }} animate={{ y: 0 }} transition={{ type: 'spring', bounce: 0.25 }} className='flex justify-center hover:cursor-pointer'>
           <li className=' text-lg py-2 px-6 hover:rounded '><Link className='nav' to="/">Home</Link></li>
           <li className=' text-lg py-2 px-6 hover:rounded'><Link className='nav' to="/cart">Cart</Link></li>
@@ -79,7 +79,7 @@ const Navbar = () => {
         <RxHamburgerMenu onClick={handleMenu} size={26} />
       </motion.div>
 
-      <motion.div className={menu ? 'bg-slate-50 shadow-slate-400 text-xl shadow-2xl absolute top-0 right-0 w-80 h-[748.5%] z-10 duration-700' : 'fixed right-[100%]'}>
+      <motion.div className={menu ? 'bg-slate-50 shadow-slate-400 text-xl shadow-2xl absolute top-0 right-0 w-80 h-[748.5%] z-10 duration-700' : 'fixed right-[100%] font-nunito'}>
         <div className='flex justify-end pr-8 pt-8'>
           <TfiClose onClick={handleMenu} className='p-1 cursor-pointer' size={26} />
         </div>

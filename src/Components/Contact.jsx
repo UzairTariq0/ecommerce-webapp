@@ -2,7 +2,11 @@ import { motion } from 'framer-motion'
 import React from 'react'
 const Contact = () => {
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: 0, duration: 0.8 }
+      }>
       <h2 className='text-center text-3xl md:text-4xl lg:text-4xl font-bold mt-7'>Feel Free to Contact us</h2>
 
       <iframe className='w-full mt-10' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.091067167836!2d66.99665172502878!3d24.860739100382787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f4e2375278b%3A0xb227c30640fba919!2sAdidas!5e0!3m2!1sen!2s!4v1678275100009!5m2!1sen!2s" width="600" height="300" style={{ border: 0 }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -45,7 +49,7 @@ const Contact = () => {
           </form>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

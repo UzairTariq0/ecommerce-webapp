@@ -12,9 +12,9 @@ const Hero = () => {
       
       className='flex flex-wrap justify-center gap-56 my-12 rounded-lg lg:my-14 mx-3  lg:mx-10 bg-gray-100   
      '>
-      <div className=' relative mt-36 lg:mt-40  '>
-        <h2 className='font-extrabold text-5xl  lg:text-6xl text-center  lg:text-left'>Shirt's</h2>
-        <h2 className='font-extrabold  mt-1 text-5xl lg:text-6xl text-center lg:text-left'>Collections</h2>
+      <div className=' relative mt-36 lg:mt-40 font-nunito  font-bold   '>
+        <h2 className='font-black text-5xl  lg:text-6xl text-center lg:text-left'>Shirt's</h2>
+        <h2 className='font-black  mt-1 text-5xl lg:text-6xl text-center lg:text-left'>Collections</h2>
         <p className=' text-base lg:text-lg font-medium mt-7 lg:mt-3 text-center lg:text-left'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, voluptates </p>
         <p className=' text-base lg:text-lg font-medium text-center lg:text-left '>magnam modi veritatis tenetur earum eos sapiente consectetur tempora qu </p>
         <div className='flex justify-center lg:justify-start'>
